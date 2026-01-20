@@ -44,13 +44,19 @@ def process_fourier(image_path, radius=15, inverse=False):
     
     return img, result
 
+
+
 # --- Execution ---
 
 # --- Execution ---
-original, decimated = process_fourier('cat.jpg', radius=5)#
+original, decimated = process_fourier('cat.jpg', radius=2,inverse=True)#
+
+
 
 # Visualization
-plt.figure(figsize=(12, 6))
-plt.subplot(121), plt.imshow(original), plt.title('Original Image')
-plt.subplot(122), plt.imshow(decimated), plt.title('Color Info Only (Fourier Decimated)')
-plt.show()
+
+cv2.imwrite('decimated_inverse.jpg', cv2.cvtColor(decimated, cv2.COLOR_RGB2BGR))
+# plt.figure(figsize=(12, 6))
+# plt.subplot(121), plt.imshow(original), plt.title('Original Image')
+# plt.subplot(122), plt.imshow(decimated,"gray"), plt.title('Color Info Only (Fourier Decimated)')
+# plt.show()
