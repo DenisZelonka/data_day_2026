@@ -17,7 +17,7 @@ This repository contains the full curriculum, speaker notes, and image-generatio
 ## 🛠️ Repository Structure
 
 - **`presentation_plan.md`**: The complete script, slide-by-side breakdown, and speaker notes.
-- **`scripts/utils.py`**: A utility library containing Python functions to generate the technical visuals (Canny Edges, Pixel Grids, RGB Splitting) using `OpenCV` and `Matplotlib`.
+- **`scripts/utils.py`**: A utility library containing Python functions to generate the technical visuals (Edges, Pixel Grids, RGB Splitting) using `OpenCV` and `Matplotlib`.
 - **`images/`**: Organized folders containing all visual assets needed for the PowerPoint, categorized by presentation phase.
 
 ---
@@ -28,3 +28,6 @@ This repository contains the full curriculum, speaker notes, and image-generatio
 You will need Python 3.8+ installed. Install the necessary libraries for the image generation scripts:
 ```bash
 pip install opencv-python matplotlib numpy pillow pillow-heif
+```
+
+**Note:** ```pillow-heif``` is only needed when input images are in HEIC format
