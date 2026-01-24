@@ -110,11 +110,3 @@
     *A: Bias (or "Garbage In, Garbage Out").*
 6.  **Q:** Why does my Samsung phone have separate folders for my two cats?  
     *A: It identified a unique hierarchy of patterns/features for each individual.*
-
----
-
-## 🛠️ VS CODE MARKDOWN EXPORT
-Copy the block below into a `.md` file in VS Code:
-
-```markdown
-# [Paste all the content above here]
